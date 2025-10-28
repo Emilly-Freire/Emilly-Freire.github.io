@@ -8,40 +8,17 @@
 }
 
 body {
-    background-color: rgb(15, 15, 15);
-    color: #F5F5F5;
-}
-
-.cabecalho ul {
-    background-color: rgb(5, 5, 5);
-    display: flex;
-    gap: 20px;
-    justify-content: end;
-}
-
-.cabecalho ul li{
-    margin: 0;
-}
-
-.cabecalho ul li a {
-    font-weight: bold;
-    color: white;
-    display: block;
-    padding: 20px 20px;
-}
-
-.cabecalho ul li a:hover {
-    color: #E5B80B;
-    background-color: rgb(15, 15, 15);
+    background-color: rgb(15, 15, 15) !important;
+    color: #F5F5F5 !important;
 }
 
 
 .home {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 80px 10%;
-    flex-wrap: wrap;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding: 80px 10% !important;
+    flex-wrap: wrap !important;
 }
 
 .home-content {
@@ -50,110 +27,107 @@ body {
 
 .home-content h1 {
     font-size: 30px;
-    color: white;
+    color: white !important;
     margin-bottom: 8px;
 }
 
 .home-content h3 {
     font-size: 20px;
-    color: #E5B80B;
+    color: #E5B80B !important;
     margin-bottom: 20px;
 }
 
 .home-content p {
     font-size: 16px;
-    line-height: 1.6;
+    line-height: 1.6 !important;
     margin-bottom: 30px;
 }
 
 .social-media {
-    display: flex;
-    gap: 20px;
+    display: flex !important;
+    gap: 20px !important;
     margin-bottom: 30px;
 }
 
 .social-media a {
     font-size: 32px;
-    color: white;
-    transition: color 0.5s ease;
+    color: white !important;
+    transition: color 0.5s ease !important;
 }
 
 .social-media a:hover {
-    color: #FFF500;
+    color: #FFF500 !important;
 }
 
 .btn {
-    display: inline-block;
-    padding: 12px 25px;
-    background-color: rgb(145, 127, 88);
-    color: white;
+    display: inline-block !important;
+    padding: 12px 25px !important;
+    background-color: rgb(145, 127, 88) !important;
+    color: white !important;
     text-decoration: none;
-    border-radius: 20px;
-    font-weight: bold;
-    transition: background-color 0.5s ease;
+    border-radius: 20px !important;
+    font-weight: bold !important;
+    transition: background-color 0.5s ease !important;
 }
 
 .btn:hover {
-    background-color: #FFF500;
+    background-color: #FFF500 !important;
 }
 
 .home-img {
     max-width: 400px;
-    display: flex;
-    justify-content: center;
+    display: flex !important;
+    justify-content: center !important;
 }
 
 .home-img img {
     width: 100%;
-    border-radius: 200px;
+    border-radius: 200px !important;
     /*box-shadow:  0px 25px black;*/
 }
 
 .fundoImg {
-    display: block;
-    justify-content: center;
-    align-items: center;
+    display: block !important;
+    justify-content: center !important;
+    align-items: center !important;
     max-width: 400px;
-    aspect-ratio: 1/1;
-    padding: 20px 20px;
-    background-color: #E5B80B;
-    color: white;
-    text-decoration: none;
+    aspect-ratio: 1/1 !important;
+    padding: 20px 20px !important;
+    background-color: #E5B80B !important;
     border-radius: 2000px;
-    font-weight: bold;
 }
 
 #habilidade {
     padding: 50px 20px;
-    background-color: #c49c00;
+    background-color: #c49c00 !important;
     text-align: center;
 }
 
 #habilidade h2 {
-    font-size: 2rem;
-    color: #333;
+    font-size: 2rem !important;
+    color: rgb(15, 15, 15);
 }
 
 .habilidade-content {
     padding-top: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center ;
+    gap: 30px !important;
 }
 
 .habilidade {
-    box-shadow: 2px 5px 5px #9b5a04;
-    background-color: rgb(15, 15, 15);
+    box-shadow: 2px 5px 5px #9b5a04 !important;
+    background-color: rgb(15, 15, 15) !important;
     padding: 20px;
-    border-radius: 15px;
+    border-radius: 15px !important;
     width: 250px;
-    text-align: left;
+    text-align: left !important;
 }
 
 .habilidade h3 {
     margin-bottom: 15px;
-    color: #c4a600;
+    color: #c4a600 !important;
 }
 
 .habilidade ul {
@@ -162,9 +136,9 @@ body {
 }
 
 .habilidade li {
-    margin-bottom: 8px;
-    font-size: 0.95rem;
-    color: #fff8dc;
+    margin-bottom: 8px !important;
+    font-size: 0.95rem !important;
+    color: #fff8dc !important;
 }
 
 
@@ -172,30 +146,30 @@ body {
 @media (max-width: 900px) {
 
     .home {
-        flex-direction: column-reverse;
-        padding: 50px 5%;
-        text-align: center;
+        flex-direction: column-reverse !important;
+        padding: 50px 5% !important;
+        text-align: center !important;
     }
 
     .home-content {
-        justify-content: center;
+        justify-content: center !important;
     }
 
     .social-media {
-        justify-content: center;
+        justify-content: center !important;
     }
 
     .home-img {
-        margin-bottom: 30px;
+        margin-bottom: 30px !important;
     }
 
     .fundoImg {
-        margin-bottom: 30px;
+        margin-bottom: 30px !important;
     }
 
     #habilidade {
-        flex-direction: column-reverse;
-        padding: 50px 5%;
-        text-align: center;
+        flex-direction: column-reverse !important;
+        padding: 50px 5% !important;
+        text-align: center !important;
     }
 }
