@@ -12,13 +12,17 @@ body {
     color: #F5F5F5 !important;
 }
 
+.navbar.bg-dark {
+    background-color: #080808 !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6) !important;
+}
 
 .home {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: space-between !important;
-    padding: 80px 10% !important;
-    flex-wrap: wrap !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 10%;
+    flex-wrap: wrap;
 }
 
 .home-content {
