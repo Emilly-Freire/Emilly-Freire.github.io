@@ -31,13 +31,13 @@ body {
 
 .home-content h1 {
     font-size: 30px;
-    color: white !important;
+    color: white;
     margin-bottom: 8px;
 }
 
 .home-content h3 {
     font-size: 20px;
-    color: #E5B80B !important;
+    color: #E5B80B;
     margin-bottom: 20px;
 }
 
@@ -63,18 +63,17 @@ body {
     color: #FFF500 !important;
 }
 
-.btn {
+#cv {
     display: inline-block !important;
     padding: 12px 25px !important;
-    background-color: rgb(145, 127, 88);
-    color: white !important;
+    color: white;
     text-decoration: none;
-    border-radius: 20px !important;
+    border-radius: 40px !important;
     font-weight: bold !important;
     transition: background-color 0.5s ease !important;
 }
 
-.btn:hover {
+#cv:hover {
     background-color: #FFF500;
 }
 

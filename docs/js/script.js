@@ -30,6 +30,8 @@ function toggleTheme() {
     }
 }
 
+themeToggle.addEventListener('click', toggleTheme);
+
 function loadSavedTheme() {
     const savedTheme = localStorage.getItem('theme');
 
