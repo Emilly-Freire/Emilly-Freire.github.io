@@ -36,7 +36,7 @@ function loadSavedTheme() {
     const savedTheme = localStorage.getItem('theme');
 
     if (savedTheme == 'light') {
-        body.classList.remove('light-mode');
+        body.classList.add('light-mode');
         themeIcon.className = 'bx bx-moon theme-icon';
     } else {
         body.classList.remove('light-mode');
