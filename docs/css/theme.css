@@ -18,7 +18,7 @@ body.light-mode h1 {
 
 body.light-mode #habilidade,
 body.light-mode #nav,
-body.light-mode .fundoImg,
+body.light-mode #home-img,
 body.light-mode #carousel-habilidades {
     background-color: #ffea72 !important;
 }
@@ -29,6 +29,28 @@ body.light-mode .habilidade ul li {
     color: black !important;
 }
 
-body.light-mode .card {
-    background-color: #f5f5f5;
+body.light-mode #cv {
+    background-color: #f5f5f5 !important;
+    color: #333333 !important;
+    border-color: #333333 !important;
+}
+
+body.light-mode .social-media a {
+    color: #333333 !important;
+}
+
+body.light-mode .social-media a:hover {
+    color: #FFF500 !important;
+}
+
+body.light-mode #cv:hover {
+    background-color: #FFF500 !important;
+    color: #f5f5f5 !important;
+    border-color: #f5f5f5 !important;
+}
+
+body.light-mode .card,
+body.light-mode .card p{
+    background-color: #f5f5f5 !important;
+    color: black !important;
 }

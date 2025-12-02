@@ -1,3 +1,4 @@
+/*reset*/
 * {
     margin: 0;
     padding: 0;
@@ -7,16 +8,19 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/*body*/
 body {
     background-color: rgb(15, 15, 15) !important;
     color: #F5F5F5 !important;
 }
 
+/*navbar*/
 .navbar.bg-dark {
     background-color: #080808 !important;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6) !important;
 }
 
+/*home*/
 .home {
     display: flex;
     align-items: center;
@@ -47,6 +51,7 @@ body {
     margin-bottom: 30px;
 }
 
+/*social media*/
 .social-media {
     display: flex !important;
     gap: 20px !important;
@@ -56,13 +61,17 @@ body {
 .social-media a {
     font-size: 32px;
     color: white !important;
-    transition: color 0.5s ease !important;
+    border: 2px solid transparent !important;
+    border-radius: 50% !important;
+    padding: 5px !important;
+    transition: all 0.3s ease !important;
 }
 
 .social-media a:hover {
     color: #FFF500 !important;
 }
 
+/*cv*/
 #cv {
     display: inline-block !important;
     padding: 12px 25px !important;
@@ -77,29 +86,31 @@ body {
     background-color: #FFF500;
 }
 
-.home-img {
-    max-width: 400px;
-    display: flex !important;
-    justify-content: center !important;
+/*imagem*/
+#home-img {
+    width: 340px;
+    height: 340px;
+    padding: 15px;
+    background-color: #E5B80B;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.home-img img {
+#home-img img {
     width: 100%;
-    border-radius: 200px !important;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
     /*box-shadow:  0px 25px black;*/
 }
-
-.fundoImg {
-    display: block !important;
-    justify-content: center !important;
-    align-items: center !important;
-    max-width: 400px;
-    aspect-ratio: 1/1 !important;
-    padding: 20px 20px !important;
-    background-color: #E5B80B !important;
-    border-radius: 2000px;
+#fundoImg {
+    margin-bottom: 30px !important;
 }
 
+/*habilidades*/
 #habilidade {
     padding: 50px 20px;
     background-color: #c49c00;
@@ -145,7 +156,7 @@ body {
 }
 
 
-
+/*/responsividade*/
 @media (max-width: 900px) {
 
     .home {
@@ -177,6 +188,7 @@ body {
     }
 }
 
+/*scrollbar*/
 ::-webkit-scrollbar {
     width: 10px;
 }
