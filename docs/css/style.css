@@ -162,19 +162,19 @@ body {
 } 
 
 /*servicos*/
-.container {
+#servicos .container-serv {
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.container .card {
+#servicos .container-serv .card-serv {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
 }
 
-.container .card:hover {
+#servicos .container-serv .card-serv:hover {
     transform: translateY(5px);
     box-shadow: 0 2px 8px rgba(221, 0, 0, 0.1);
 }
