@@ -67,7 +67,8 @@ body.light-mode #contato {
     color: #ffaf02 !important;
 }
 
-body.light-mode #contato h2 {
+body.light-mode #contato h2,
+body.light-mode #contato .text {
     color: #ffaf02 !important;
 }
 
