@@ -163,14 +163,13 @@ body {
 
 /*servicos*/
 #servicos .container-serv {
-    display: flex;
-    gap: 30px;
     flex-wrap: wrap;
     justify-content: center;
 }
 
 #servicos .container-serv .card-serv {
-    margin: 10px;
+    display: flex;
+    margin-left: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
 }
@@ -211,7 +210,8 @@ body {
 footer {
     color: #F5F5F5 !important;
     text-align: center !important;
-    padding: 40px 0 !important;
+    margin-top: 40px !important;
+    margin-bottom: 40px !important;
 }
 
 
