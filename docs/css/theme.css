@@ -57,3 +57,30 @@ body.light-mode .card p{
     background-color: #f5f5f5 !important;
     color: rgb(216, 191, 108) !important;
 }
+
+body.light-mode .card:hover {
+    box-shadow: 0 2px 8px rgba(255, 182, 25, 0.493);
+}
+
+body.light-mode #contato {
+    background-color: #ffea72 !important;
+    color: #ffaf02 !important;
+}
+
+body.light-mode #contato h2 {
+    color: #ffaf02 !important;
+}
+
+body.light-mode #email {
+    color: rgb(216, 191, 108) !important;
+    border-color: rgb(216, 191, 108) !important;;
+}
+
+body.light-mode #email:hover {
+    color: #ffaf02 !important;
+    border-color: #ffaf02 !important;
+}
+
+body.light-mode footer {
+    color: rgb(216, 191, 108) !important;
+}
