@@ -32,6 +32,10 @@ body.light-mode .habilidade ul li {
     color: rgb(216, 191, 108) !important;
 }
 
+body.light-mode #carousel-habilidades #imagem p {
+    color: #ffaf02 !important;
+}
+
 body.light-mode #cv {
     background-color: #f5f5f5 !important;
     color: rgb(216, 191, 108) !important;
