@@ -86,6 +86,18 @@ body.light-mode #email:hover {
     border-color: #ffaf02 !important;
 }
 
+body.light-mode #voz {
+    background-color: #f5f5f5 !important;
+    color: rgb(216, 191, 108) !important;
+    border-color: rgb(216, 191, 108) !important;
+}
+
+body.light-mode #voz.active {
+    background-color: #ffea72 !important;
+    color: white !important;
+    border-color: rgb(216, 191, 108) !important;
+}
+
 body.light-mode footer {
     color: rgb(216, 191, 108) !important;
 }
