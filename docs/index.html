@@ -6,11 +6,13 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/theme.css">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
     <title>Portifólio - Aula Web I</title>
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+<body class="scroll-smooth">
+    <nav id="nav" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
         <div class="container">
             <a class="navbar-brand fw-bold" href="#home">
                 Meu <span class="text-warning">Portifólio</span>
@@ -26,7 +28,7 @@
             </button>
 
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav align-items-center">
                     <li class="nav-item">
                         <a class="nav-link active" href="#home">Inicio</a>
                     </li>
@@ -37,16 +39,23 @@
                         <a class="nav-link active" href="#servicos">Serviços</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Contato</a>
+                        <a class="nav-link active" href="#contato">Contato</a>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <button id="themeToggle" class="btn btn-outline-light theme-toggle" type="button" title="Alterar tema">
+                            <i class="bx bx-sun theme-icon"></i>
+                        </button>
+
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+    
     <section class="home" id="home">
         <div class="home-content">
             <h1> Emilly Freire </h1>
-            <h3> Eu sou estudante, dev em aprendizado, flautista e desenhista </h3>
+            <h3> Eu sou uma <span class="multiple-text"></span></h3>
             <p> 
                 Sou uma estudante apaixonada por tecnologia e arte. 
                 Atualmente, estou aprendendo desenvolvimento de software, 
@@ -75,14 +84,11 @@
                     </a>
                 </div> 
                
-                    <a href="./cv/cv-generico.pdf" class="btn" download="CV ALEATORIO.webp" target="_blank"> download CV </a>
+                    <a href="https://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K1264868H9&tokenCaptchar=0cAFcWeA7emua4-Ls2gpQXgRTBKpYE82spxZ2jdPFgaIDn-akvhwjFFhM7rOTWw4JR6ChhD46UABTs1yEQjPD1A45zTCvrvh0a27v76_cRVism-Dbtsb-HHpyMuAvrycIXE613eWNZuaNCsioMRdTwX3KXouAyJiRNuOYG8-X_VcOP4ywicFVcNnp3lb4b_gcQPxOOx0bzmz-RA1Kuo9-fIaDEUIrYN-ba0US6PfRn2DBHc-MF-StALgAGxe9x7JEOkXsPZT78022IPV7A5CUEg0h2Gf2wQkncz9FDF3CwxuMdYgoFhREqyY0kJR7n1gw5QXr72QUyzwwGf9GAypy44miJAJfK-m1z7JPVpw6Y8VYsXgzms2IXU9ywquuM5XSuyW8tM6ADMbHhurTu4TdzDUkgNxk62WwMdl2Cr1dfUxZkqp0z58-dSBA-rhO2-SiF9kBKZZ_w521U-eqzi5MPYpBZKn4AASZ0tcHToxEpArNS6axwcxQ2cSx5PzTPzlgag20xx36ZV9x6nGgL888vo3QmRcF9bOT2_Nb7cMhJwkN_kHVNHpMFCOgPzrIAbNfsfts_niKec9Xe4Po91pFNwRzJsbF3uEOGXsygmcQbgIXzqwHk7DL7hjRzyec2fR_qO4kZ0wM1EZrE5eHeJsROvKma_AH4sXf5WxR-_Pbz0_44K2enO3Ntzghwjmkmpi2jtaaPEES7kpU-sBmBnnmtXbUa1TXh5qyckxw4DY-SJ9poQfSaKhG9vrNyGpetqwf_48or_a1MIWQFxQWmEu1fzFRJzMS-SlKBcfeSQXUum-_qqRZ4bStEZBiTzl5Ra6Lb-iMYeAklFt5-AWNoQSCrCTbW99Jpj-Ix0iDy-HToqyKzC8NpMAMJbOWb2HOp2e_0SLksCO8hPR7aLstNoeCx5M4MH41yWIPmGDdPLzEVNELLq2RIX9c-VFxiLxB-E36gTPK89OVgBhFJw6-JsP-tRkv1zrGSLo-KS4dhFy08nsnGVNZuTZRcXRxhCGAGUcSCguMEwcV8us7-pxX3V53sKK0223KHt7j9rFIdvtVMW5CFGSMC1oE8bhvVVoXKAU3P8enf_WLdVC30jvPtg_BwxQfB4PFnzCXHmRnNt8nfD2KOrcUxBOd7wkWWfjsyt979W0VYofW-D3hlcgg1TEVQ9fQqsfuIt4mXzsQg-cBGXmspnWpijpfJbuvG-7572iXxrwRmS_JVwjZRcfG3dRrRiGJYDTdseen_D7ktQPj_SQVHmdk52u3-U4SBdna1szwUR_1R-W0tvg5WFTWdxLSnLCLr6PydjMmsvyixcEpZZ7A67y50jfIXPj7hV91_6fLa1aPdvkIxrVciaDMZ9K0c6L_vHhC5P8OMXZqLzfoQpRzUt_A1Tcv1PCNxZKFLEV5b9V_R_7kWfnrDh___GmBzlrj4LVR3b4-1ShuJ-33qva2o7GEFEHVYdEVRZusabgwzYMMR-p7qZ1R40HNxbfPtW3slu61NNSXC8Hk4NuHNCnNJ3gvbNs4a2YDpSOoSvK9gXuFpcB9-3h4VreU7lLJ9rScRyLghXzZHSB933fyCjN-UrURIAmkIg3hj7XUEKm79Un3lb8Rdzc6nxRMRVm9FyXezBDl6Zm1l9J8j4IrcUGemt87oN0MZC18eSUab7f0tgjHlgfLX9mXbpx9_N10QkvIMxTR4Kr9CaTpvcukC7RL_YxBRUXaK_xLouCQnXIwlg3ABSUOgCzIJF5DA7z58nrgN-kDEvBVByhNotPXZ4m0UZIWNbdb_c-WLC-F6Ekl66F_yo1XdOUxBj3dBdquqkvbHd5x3qmVZIJLK4Ss02cQ-nb21Mup8eZFEwi36NtOz1Cw58FsJQTGtIhrMLOaXf4TGaON24BOymBQNCvJBsGLtFlQ52jAbZDF-yyMsJhVdWdJu7phoAzQfl8BDu6mCW3XKtaDRyUlaSK66qW_CB1GoE8dEL6AICV0FM2jTQpiHjXW9Xse90yp9SYuLeVBJISi-fPzh56QxkXFb28aOxo9gp7842snqSrxkxGyHr6m6QTVJ52wko2YlhWoTB_W5mIjbsNnqweoZ2SPgOvYQcDJ-rgoOJ4kwPtCqslZQgSsAfzyb4IS0gSnXOrc7TJ2GHZ8_2h2yeP4EAN84fELBkKn_howXv5KeOi5tNNTWMsTzvgfsYRKFPAvSTC8YG-_LLtH1cVPJoJttCP_ekFlEfgZD1qpGbxy6vhU" class="btn btn-outline-light" id="cv" target="_blank"> Curriculo Lattes </a>
         </div>
-            <div class="fundoImg">
-                <div class="home-img">
+                <div id="home-img" style="width: 340px; height: 340px;">
                     <img src="./img/fotoqualquer.jpeg" alt="Foto Perfil">
                 </div>
-            </div>
-        </div>
     </section>
     <section id="habilidade" class="bg-warning">
         <h2> Habilidades </h2>
@@ -118,60 +124,61 @@
     </section>
 
     <section id="carousel-habilidades" class="bg-warning carousel slide">
-        <div id="carouselAutoplaying" class="carousel" data-bs-ride="carousel">
+        <div id="carouselRide" class="carousel slide" data-bs-ride="true">
             <div class="carousel-inner">
-
                 <div class="carousel-item active">
-                    <img src="./img/ProgramaHtml.png" class="d-block mx-auto w-50" alt="Imagem de códigos html, meramente ilustrativa.">
+                    <img src="./img/ProgramaHtml.png" class="mx-auto d-block w-50" alt="códigos HTML, CSS e JavaScript">
                 </div>
-
-                <div class="carousel-item active">
-                    <img src="./img/Flauta.png" class="d-block mx-auto w-50" alt="Imagem de flauta transversal em partitura, meramente ilustrativa.">
+                <div class="carousel-item">
+                    <img src="./img/Flauta.png" class="mx-auto d-block w-50" alt="flauta transversal">
                 </div>
-
-                <div class="carousel-item active">
-                    <img src="./img/Desenho.png" class="d-block mx-auto w-50" alt="Imagem de desenho, meramente ilustrativa.">
+                <div class="carousel-item">
+                    <img src="./img/Desenho.png" class="mx-auto d-block w-50" alt="desenho artístico">
                 </div>
-
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselAutoplaying" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon"></span>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselRide" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden"></span>
             </button>
-
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselAutoplaying" data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselRide" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden"></span>
             </button>
+        </div>
+        <div id="imagem">
+            <p>Imagens meramente ilustrativas para representar as habilidades.</p>
         </div>
     </section>
 
     <section id="servicos" class="py-5 text-light text-center">
-        <div class="container">
-            <h2 class="text-warning mb-4">Serviços</h2>
-
+        <h2 class="text-warning mb-4">Serviços</h2>
+        <div class="container-serv">
             <div class="row justify-content-center g-4 text-start">
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-md-6 col-lg-4 card-serv">
                     <div class="card border-warning mb-4 h-100">
                         <div class="card bg-black card-body">
                             <h3 class="card-title text-warning mb-3"><i class="bx bx-code-alt"></i> Desenvolvimento Web</h3>
-                            <p class="card-text text-light">Criando e manter sites e aplicações online, unindo criatividade e lógica para transformar ideias em experiências digitais funcionais.</p>
+                            <p class="card-text text-light">Criando e mantendo sites e aplicações web, unindo criatividade e lógica para transformar ideias em experiências digitais funcionais.</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-md-6 col-lg-4 card-serv">
                     <div class="card border-warning mb-4 h-100">
                         <div class="card bg-black card-body">
                             <h3 class="card-title text-warning mb-3"><i class="bx bx-cube-alt"></i> Orientação a Objetos</h3>
-                            <p class="card-text text-light">Aplicação de conceitos de programação orientada a objetos, utilizando classes, herança e encapsulamento para estruturar sistemas de forma organizada e reutilizável.</p>
+                            <p class="card-text text-light">Aplicação de conceitos de programação orientada a objetos, utilizando classes, 
+                                herança e encapsulamento para estruturar sistemas de forma organizada e reutilizável.</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-md-6 col-lg-4 card-serv">
                     <div class="card border-warning mb-4 h-100">
                         <div class="card bg-black card-body">
                             <h3 class="card-title text-warning mb-3"><i class="bx bx-analyse"></i> Análise de Projetos</h3>
-                            <p class="card-text text-light">Avaliação e estruturação de projetos, identificando requisitos, propondo soluções e planejando o desenvolvimento de forma eficiente e organizada.</p>
+                            <p class="card-text text-light">Avaliação e estruturação de projetos, identificando requisitos, 
+                                propondo soluções e planejando o desenvolvimento de forma eficiente e organizada.</p>
                         </div>
                     </div>
                 </div>
@@ -179,6 +186,37 @@
             </div>
         </div>
     </section>
+
+    <section id="contato" class="bg-warning">
+        <h2>Contato</h2>
+        <div class="text">
+            <p>Se caso tiver perguntas contate-me a partir deste e-mail!</p>
+        </div>
+        <div>
+            <a href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWsmCLCkFpkpRHwNHmMpbRjxQVvwqJLcQQMxvVSZVSMssMgLplvXplSjxTdBqNtjZfKQSvtRb" class="btn btn-outline-light" id="email" target="_blank">Email</a>
+        </div>
+    </section>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div> 
+
+    <button id="voz" aria-pressed="false">
+        Ativar leitura
+    </button>
+
+    <footer>
+        <p>&copy; 2025 Emilly Freire. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
